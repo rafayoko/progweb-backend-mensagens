@@ -7,8 +7,9 @@ app.use(cors());
 app.use(express.json());
 
 
-//Porta que eu estou ouvindo
-app.listen(3000);
+
+// Porta que eu estou ouvindo
+app.listen(process.env.PORT || 3000);
 
 app.get('/hello', 
     function (req, res){    
