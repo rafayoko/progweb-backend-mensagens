@@ -22,9 +22,14 @@ function (req, res){
     res.send("Hello de Novo");
     }
 )
-
-const mensagens = [
-    "Elziele da Rocha", "Lucas Canova dos Santos", 0 
+let mensagens = [
+    {
+       nome: "Vitor Cintra", apelido: "Tafei", aniversario:"26/02/1997", materia_favorita:"física 3", jogo:"Civilization 6"
+    },
+    {
+        nome: "Rafaela Yoko", apelido: "Rafa", aniversario:"01/11/1999", materia_favorita:"Circuitos Elétricos 1", jogo:"It Takes Two"
+    }
+     
 ];
 
 app.get('/mensagens',
@@ -34,6 +39,11 @@ app.get('/mensagens',
     }
 );
 
+app.get('/mensagens/:id/:n/',
+    function(req,res){
+        let id = req.params.id - 1;
+        res.send(mensagens[id][req.params.nn]);
+    });
 app.get('/mensagens/:id',
     function(req, res){
         const id = req.params.id - 1;
