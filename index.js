@@ -24,10 +24,10 @@ function (req, res){
 )
 let mensagens = [
     {
-       nome: "Vitor Cintra", apelido: "Tafei", aniversario:"26/02/1997", materia_favorita:"física 3", jogo:"Civilization 6"
+       nome: "Vitor Cintra", comida_favorita:"Salmão", instrumento_favorito:"Caixa", evento_favorito:"Interbatuc"
     },
     {
-        nome: "Rafaela Yoko", apelido: "Rafa", aniversario:"01/11/1999", materia_favorita:"Circuitos Elétricos 1", jogo:"It Takes Two"
+        nome: "Rafaela Yoko", comida_favorita:"Lasanha",  instrumento_favorito:"Caixa", evento_favorito:"Tusca"
     }
      
 ];
