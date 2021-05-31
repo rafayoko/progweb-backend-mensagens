@@ -23,11 +23,12 @@ app.get('/',
 //  )
 let mensagens = [
     {
-       nome: "Vitor Cintra", comida_favorita:"Salmão", instrumento_favorito:"Caixa", evento_favorito:"Interbatuc"
+        nome: "Rafaela Yoko", comida_favorita:"Lasanha",  instrumento_favorito:"Caixa", evento_favorito:"Tusca"
     },
     {
-        nome: "Rafaela Yoko", comida_favorita:"Lasanha",  instrumento_favorito:"Caixa", evento_favorito:"Tusca"
-    }
+       nome: "Vitor Cintra", comida_favorita:"Salmão", instrumento_favorito:"Caixa", evento_favorito:"Interbatuc"
+    },
+  
      
 ];
 
