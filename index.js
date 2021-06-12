@@ -23,7 +23,7 @@ app.get('/',
 
 const mensagens = [
     {
-        Titulo: "Vikings", Status:"Finalizado", AnoLancamento:2013},
+        Titulo: "Vikings",Status:"Finalizado",AnoLancamento:2013},
    
 
 ];
