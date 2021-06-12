@@ -23,13 +23,9 @@ app.get('/',
 
 let mensagens = [
     {
-        nome: "Rafaela Yoko", comida_favorita:"Lasanha",  instrumento_favorito:"Caixa", evento_favorito:"Tusca"
+        Filmes: "Eu sou a lenda"
     },
-    {
-       nome: "Vitor Cintra", comida_favorita:"Salmão", instrumento_favorito:"Caixa", evento_favorito:"Interbatuc"
-    },
-  
-     
+   
 ];
 
 app.get('/mensagens',
