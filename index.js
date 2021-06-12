@@ -23,7 +23,7 @@ app.get('/',
 
 let mensagens = [
     {
-        filmeseries: "Vikings", status:"Finalizado", anoLancamento:2013 },
+        Titulo: "Vikings", Status:"Finalizado", AnoLancamento:2013 },
    
 
 ];
