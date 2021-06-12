@@ -12,7 +12,7 @@ app.listen(process.env.PORT || 3000);
 
 app.get('/', 
     function (req, res){    
-        res.send("Hello World");
+        res.send("Aplicativo da Rafaela Yoko");
     }
 );
 
@@ -22,10 +22,7 @@ app.get('/',
    // })
 
 let mensagens = [
-    {
-        titulo: "Vikings", status:"Finalizado", anolancamento:"2013"},
-   
-
+    {titulo: "Vikings", status:"Finalizado", anolancamento:"2013"}
 ];
 
 app.get('/mensagens',
@@ -35,11 +32,6 @@ app.get('/mensagens',
     }
 );
 
-app.get('/mensagens/:id/:n/',
-    function(req,res){
-        let id = req.params.id - 1;
-        res.send(mensagens[id][req.params.nn]);
-    });
 app.get('/mensagens/:id',
     function(req, res){
      let id = req.params.id - 1;
@@ -55,8 +47,8 @@ app.get('/mensagens/:id',
 
 app.post('/mensagens', 
     (req, res) => {
-        console.log(req.body.mensagem);
-       let mensagem = req.body.mensagem;
+        console.log(req.body);
+       let mensagem = req.body;
         mensagens.push(mensagem);
         res.send("criar uma mensagem.")
     }
@@ -65,7 +57,7 @@ app.post('/mensagens',
 app.put('/mensagens/:id',
     (req, res) => {
         let id = req.params.id - 1;
-        let mensagem = req.body.mensagem;
+        let mensagem = req.body;
         mensagens[id] = mensagem;        
         res.send("Mensagem atualizada com sucesso.")
     }
