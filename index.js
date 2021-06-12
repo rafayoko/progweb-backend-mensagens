@@ -23,10 +23,9 @@ app.get('/',
 
 let mensagens = [
     {
-        Filmes: "Rafaela Yoko", Status:"Caixa" },
+        Filmes_e_Séries: "Vikings", Status:"Finalizado", anoLancamento:2013 },
    
-  
-     
+
 ];
 
 app.get('/mensagens',
