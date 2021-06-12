@@ -23,9 +23,10 @@ app.get('/',
 
 let mensagens = [
     {
-        Filmes: "Eu sou a lenda"
-    },
+        Filmes: "Rafaela Yoko", Status:"Caixa" },
    
+  
+     
 ];
 
 app.get('/mensagens',
