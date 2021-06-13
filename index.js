@@ -20,7 +20,6 @@ app.get('/',
 //function (req, res){    
   //  res.send("Hello de Novo");
    // })
-
 let mensagens = [
     {titulo: "Vikings", status:"Finalizado", anolancamento:"2013"}
 ];
